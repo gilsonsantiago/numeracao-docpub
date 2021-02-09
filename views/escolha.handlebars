@@ -1,0 +1,38 @@
+<div class="container">
+
+   <br>
+
+    <br>
+
+
+    <form action="/buscar" method="post">
+
+        <div class="form-row">
+
+            <div class="col-md-6 mb-3">
+
+                <label for="tipo">Tipo de Documento</label>
+
+                <select class="custom-select" id="tipo" name="tipo" required>
+
+                    <option selected disabled value="">Sem escolha...</option>
+                  
+                    <option value="1">1 - Lei Ordinária</option>
+                    <option value="2">2 - Lei Complementar</option>
+                    <option value="3">3 - Decreto</option>
+                    <option value="4">4 - Resolução</option>
+                    <option value="5">5 - Portaria</option>
+                    <option value="6">6 - Despacho Administrativo</option>
+                    <option value="7">7 - Ofícios</option>
+                
+                </select>
+
+            </div>
+
+        </div>
+
+        <button class="btn btn-primary" type="submit">Escolha o tipo de documento</button>
+
+    </form>
+
+</div>

@@ -1,0 +1,63 @@
+<div class="container">
+
+     <br>
+
+     <br>
+
+    <h2>Cadastramento de Documentos Públicos</h2>
+
+    <hr>
+   <br>
+
+    <form action="/inserir" method="post"  >
+
+        <div class="form-row">
+
+            <div class="col-md-3 mb-3">
+
+                <label for="numero">Número do Documento</label>
+                <input type="text" class="form-control" id="numero" name="numero" required>
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label for="tipo">Tipo de Documento</label>
+
+                <select class="custom-select" id="tipo" name="tipo" required>
+
+                    <option selected disabled value="">Sem escolha...</option>
+                  
+                    <option value="1">1 - Lei Ordinária</option>
+                    <option value="2">2 - Lei Complementar</option>
+                    <option value="3">3 - Decreto</option>
+                    <option value="4">4 - Resolução</option>
+                    <option value="5">5 - Portaria</option>
+                    <option value="6">6 - Despacho Administrativo</option>
+                    <option value="7">7 - Ofícios</option>
+                
+                </select>
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <label for="data">Data do Documento</label>
+                <input type="text" class="form-control" id="data" name="data" required>
+
+            </div>
+
+             <div class="col-md-12 mb-3">
+
+                <label for="ementa">Ementa do Documento</label>
+                <textarea class="form-control" id="ementa" name="ementa" rows="5"></textarea>
+           
+            </div>
+
+        </div>
+
+        <button class="btn btn-primary" type="submit">Cadastrar Documento</button>
+
+    </form>
+
+</div>

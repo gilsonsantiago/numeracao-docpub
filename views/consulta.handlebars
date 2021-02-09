@@ -1,0 +1,55 @@
+<div class="container">
+
+     <br>
+
+     <br>
+
+    <table class="table">
+
+        <thead>
+
+            <tr>
+                <th scope="col">Ação</th>
+                <th scope="col">Número</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ementa</th>
+                <th scope="col">Tipo </th>
+      
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {{#datas}}
+
+            <tr>
+
+                <td>
+                    <a href="/deletar/{{id}}">Deletar</a> 
+                </td>
+              
+                <td>{{numero}}</td>
+                <td> {{data}}</td>
+                <td>{{ementa}}</td>
+                <td>{{tipo}}</td> 
+            
+            </tr>
+
+            {{/datas}}
+
+        </tbody>
+
+    </table>
+
+  </div>
+
+<div class="container">
+
+ <hr> <br>
+
+    <a href="/consulta"  ><button class="btn btn-primary">Nova Pesquisa</button></a>
+    <a href="/cadastrar" ><button class="btn btn-primary">Cadastrar</button></a>
+    <a href="/" ><button class="btn btn-primary">Início</button></a>
+
+</div>
